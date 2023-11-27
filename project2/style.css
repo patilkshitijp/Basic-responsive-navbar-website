@@ -1,0 +1,129 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: -1px;
+
+}
+:root{
+    --navbar-height: 59px;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+}
+#logo{
+    margin: 3px 10px;
+
+}
+
+#logo img{
+    height: 34px;
+    margin: 23px 34px ;
+
+}
+
+#navbar ul{
+    display: flex;
+    font-family:'bree serif',serif;
+}
+#navbar::before{
+   content: "";
+   background-color: black;
+   position: absolute;
+   top: 0px;
+   bottom: 0px;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   opacity: ;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 0.8em;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 23px 23px;
+    border-radius: 34px;
+    text-decoration: none;
+
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white ;
+}
+#home{
+    display: flex;
+    flex-direction: column ;
+    padding: 3px 200px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+   background: url('images/bg.jpg.jpg')no-repeat center center/cover;
+   position: absolute;
+   height: 90%;
+   top: 0px;
+   bottom: 0px;
+   width: 100%;
+   z-index: -1;
+   opacity: 0.9;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family:'bree serif',serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family:'bree serif',serif;
+}
+.h-primary{
+    font-size: 1.8rem;
+    padding: 1px;
+}
+
+#services{
+    margin: 6px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: aliceblue;
+}
+#services.box img{
+    height: 30px;
+    margin: auto;
+    display: block;
+}
+
+.h-secondary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px ;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.center{
+    text-align: center;
+}
